@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ENote">
+
+    <TextView
+        android:text="@string/title_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_below="@id/textView4"
+        android:hint="@string/enter_title"
+
+        android:layout_alignParentStart="true"
+        android:maxLines="1"
+
+        android:ems="10"
+
+        android:id="@+id/editText" />
+
+    <TextView
+        android:text="@string/enter_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@id/editText"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/e_desc"
+        android:layout_below="@id/textView6"
+        android:height="100dp"
+        android:ems="10"
+        android:layout_weight="10"
+        android:id="@+id/editText2"
+        tools:ignore="ObsoleteLayoutParam" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+
+        <Button
+            android:text="@string/save_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            tools:ignore="ButtonStyle" />
+
+
+
+        <Button
+            android:text="@string/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_marginStart="30dp"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+
+</RelativeLayout>
